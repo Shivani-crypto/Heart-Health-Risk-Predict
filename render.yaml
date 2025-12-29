@@ -1,0 +1,7 @@
+services:
+  - type: web
+    name: heart-health-risk
+    env: python
+    pythonVersion: 3.10.13
+    buildCommand: pip install -r requirements.txt
+    startCommand: gunicorn app:app
